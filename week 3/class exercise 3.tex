@@ -1,0 +1,42 @@
+\documentclass{article}
+
+\usepackage{rotating}
+\usepackage[table]{xcolor}
+
+\begin{document}
+
+\begin{sidewaystable}[h!]
+	\begin{center}
+		\caption{First Semester CSC 101 Time-Table}
+		
+		\label{tab:table1}
+		
+		\begin{tabular}{l|c|c|c|c|c|c|c|c}
+			% sorry about the clashing colors,i was trying to be creative
+			\cellcolor{blue!16}\textbf{Course Code} & \cellcolor{blue!16}\textbf{Status} & \cellcolor{blue!16}\textbf{Unit} & \cellcolor{blue!16}\textbf{Time} & \cellcolor{orange!16}\textbf{Monday} & \cellcolor{green!16}\textbf{Tuesday} & \cellcolor{yellow!16}\textbf{Wednesday} & \cellcolor{purple!16}\textbf{Thursday} & \cellcolor{brown!16}\textbf{Friday}\\
+			\hline
+			
+			\cellcolor{pink!46}GST 101 & C & 2 & 9 - 10AM & PHY 101 & MTH 101 & - & - & - \\
+			
+			\cellcolor{blue!16}GST 103 & C & 2 & 10 - 11AM & PHY 101 & MTH 101 & MTH 103 & - & - \\
+			
+			\cellcolor{red!16}GST 108 & C & 2 & 11 - 12PM & CHM 101 & GST 103 & PHY 101 & GST 108 & GST 101 \\
+			
+			\cellcolor{olive!16}GST 108 & C & 2 & 12 - 1PM & CHM 101 & GST 103 & PHY 101 & GST 108 & GST 101 \\
+			
+			\cellcolor{teal!16}CHM 107 & C & 2 & 1 - 2:30PM & \cellcolor{gray!16}BREAK & \cellcolor{gray!16}- & \cellcolor{gray!16}- & \cellcolor{gray!16}- & \cellcolor{gray!16}- \\
+			
+			\cellcolor{violet!16}MTH 101 & C & 2 & 2:30 - 3:30PM & MTH 103 & CHM 107 & CHM 101 & CSC 101 & PHY 107 \\
+			
+			\cellcolor{yellow!16}MTH 103 & C & 2 & 3:30 - 4:30PM & MTH 101 & CHM 107 & CHM 101 & CSC 101 & PHY 107 \\
+			
+			\cellcolor{cyan!16}PHY 101 & C & 2 & 4:30 - 5:30PM & - & CHM 107 & - & CSC 101 & PHY 107 \\
+			
+			\cellcolor{red!16}PHY 107 & C & 2 & 5:30 - 6:30PM & - & - & - & - & - \\
+			
+			\cellcolor{magenta!20}CSC 101 & C & 2 & 6:30 - 7:30 PM & - & - & - & - & - \\
+		\end{tabular}
+	\end{center}
+\end{sidewaystable}
+
+\end{document}
