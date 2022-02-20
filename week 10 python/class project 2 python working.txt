@@ -1,0 +1,280 @@
+# Making a quiz on Computer Science
+
+# Starting parameters
+score = 0
+tries = 0
+
+#question 1
+print ('Warning! You have only three tries and your answers are case-sensitive!')
+q1 = "What does HTML stand for?"
+print (q1)
+
+while tries < 3:
+    #answer 1
+    a1 = str(input('What is the answer?'))
+
+    if a1 == "Hypertext Markup Language":
+        print('Correct!Next question')
+        score += 1
+        pass
+    elif a1 != "Hypertext Markup Language": 
+        #con = 1 is failure
+        con = 1
+        while con == 1:
+            print ('Wrong answer! Try again!')        
+            tries += 1
+            print(tries)
+            a1 = str(input('What is the answer'))
+        #con = 2 is success
+            if a1 == "Hypertext Markup Language":
+                print('Correct!Next question')
+                con = 2
+        if con ==2:
+            print ("success")
+            score += 1
+            pass
+        
+    pass
+
+# question 2   
+    q2 = "_ is a computer network which is controlled and administered by a single entity such as company or organization"
+    print (q2)
+    a2 = str(input('What is the answer?'))
+    tries = 0
+    if a2 == "Intranet":
+        print ('Correct!Next question')
+        score += 1
+else: 
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a2 = str(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+    
+q3 = "How many characters should a strong password have at least?"
+print (q3)
+a3 = int(input('What is the answer?'))
+tries = 0
+if a3 == 8 :
+    print ('Correct!Next question')
+    score += 1
+else: 
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a3 = int(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+
+q4 = "What type of software is an Operating System?"
+print (q4)
+a4 = str(input('What is the answer?'))
+tries = 0
+if a4 == "System Software":
+    print ('Correct!Next question')
+    score += 1
+else: 
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a4 = str(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+    
+q5 = "Give one type of Robot"
+print (q5)
+a5 = str(input('What is the answer?'))
+tries = 0
+if a5 == "Pre-programmed robot":
+    print('Thats the end of the quiz!')
+    score += 1
+elif a5 == "Humanoid robot":
+    print('Thats the end of the quiz!')
+    score += 1
+elif a5 == "Autonomous robot":
+    print('Thats the end of the quiz!')
+    score += 1
+elif a5 == "Teleoperated robot":
+    print('Thats the end of the quiz!')
+    score += 1
+elif a5 == "Augmenting robot":
+    print('Thats the end of the quiz!')
+    score += 1
+else:
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a5 = str(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+            
+q6 = "In a _ database management system model, data is stored in a parent-children relationship"
+print (q6)
+a6 = str(input('What is the answer?'))
+tries = 0
+if a6 == "Hierarchical":
+    print ('Correct!Next question')
+    score += 1
+else: 
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a6 = str(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+
+
+if score == 6:
+    print ('Congratulations! You got all the questions!')
+elif score == 0:
+    print ('You really need to brush up on your studeis!')
+else:
+    print ('Your score is', score)
+
+
+
+# Making a quiz on Computer Science
+
+# Starting parameters
+score = 0
+tries = 0
+
+#question 1
+print ('Warning! You have only three tries and your answers are case-sensitive!')
+q1 = "What does HTML stand for?"
+print (q1)
+
+while tries < 3:
+    #answer 1
+    a1 = str(input('What is the answer?'))
+
+    if a1 == "Hypertext Markup Language":
+        print('Correct!Next question')
+        score += 1
+        pass
+    elif a1 != "Hypertext Markup Language": 
+        #con = 1 is failure
+        con = 1
+        while con == 1:
+            print ('Wrong answer! Try again!')        
+            tries += 1
+            print(tries)
+            a1 = str(input('What is the answer'))
+        #con = 2 is success
+            if a1 == "Hypertext Markup Language" or tries == 3:
+                print('Correct!Next question')
+                con = 2
+        if con ==2:
+            print ("success")
+            score += 1
+            tries = 0
+            pass
+        
+    pass
+
+# question 2   
+    q2 = "_ is a computer network which is controlled and administered by a single entity such as company or organization"
+    print (q2)
+    a2 = str(input('What is the answer?'))
+    tries = 0
+    if a2 == "Intranet":
+        print ('Correct!Next question')
+        score += 1
+else: 
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a2 = str(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+    
+q3 = "How many characters should a strong password have at least?"
+print (q3)
+a3 = int(input('What is the answer?'))
+tries = 0
+if a3 == 8 :
+    print ('Correct!Next question')
+    score += 1
+else: 
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a3 = int(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+
+q4 = "What type of software is an Operating System?"
+print (q4)
+a4 = str(input('What is the answer?'))
+tries = 0
+if a4 == "System Software":
+    print ('Correct!Next question')
+    score += 1
+else: 
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a4 = str(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+    
+q5 = "Give one type of Robot"
+print (q5)
+a5 = str(input('What is the answer?'))
+tries = 0
+if a5 == "Pre-programmed robot":
+    print('Thats the end of the quiz!')
+    score += 1
+elif a5 == "Humanoid robot":
+    print('Thats the end of the quiz!')
+    score += 1
+elif a5 == "Autonomous robot":
+    print('Thats the end of the quiz!')
+    score += 1
+elif a5 == "Teleoperated robot":
+    print('Thats the end of the quiz!')
+    score += 1
+elif a5 == "Augmenting robot":
+    print('Thats the end of the quiz!')
+    score += 1
+else:
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a5 = str(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+            
+q6 = "In a _ database management system model, data is stored in a parent-children relationship"
+print (q6)
+a6 = str(input('What is the answer?'))
+tries = 0
+if a6 == "Hierarchical":
+    print ('Correct!Next question')
+    score += 1
+else: 
+    while tries < 3:
+        print ('Wrong answer! Try again!')
+        tries += 1
+        a6 = str(input('What is the answer?'))
+
+    if tries == 3:
+        print ('No more chances!')
+
+
+if score == 6:
+    print ('Congratulations! You got all the questions!')
+elif score == 0:
+    print ('You really need to brush up on your studeis!')
+else:
+    print ('Your score is', score)
